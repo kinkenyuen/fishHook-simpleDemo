@@ -22,7 +22,7 @@ void myNSLog(NSString *format, ...) {
 ```
 3.重新绑定符号
 ```
-struct rebinding nslog;
+    struct rebinding nslog;
     nslog.name = "NSLog";
     nslog.replacement = myNSLog;
     nslog.replaced = (void *)&sys_nslog;
